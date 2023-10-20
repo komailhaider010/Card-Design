@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>01</h2>
+            <div class="content">
+                <h3>Card One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur voluptates neque.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>02</h2>
+            <div class="content">
+                <h3>Card two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur voluptates neque.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>03</h2>
+            <div class="content">
+                <h3>Card three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur voluptates neque.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+</script>
+</html>
